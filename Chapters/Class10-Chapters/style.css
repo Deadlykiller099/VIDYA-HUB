@@ -1,0 +1,191 @@
+/* style.css - Class 10 Science chapter cards (responsive, modern) */
+
+:root{
+  --bg: #f4f8fb;
+  --card: #ffffff;
+  --accent: #6c5ce7;
+  --accent-2: #00b894;
+  --muted: #6b7280;
+  --glass: rgba(255,255,255,0.6);
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(16,24,40,0.06);
+}
+
+*{box-sizing:border-box}
+html,body{
+  height:100%;
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, var(--bg), white 120%);
+  color:#172031;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* page wrapper */
+.container{
+  max-width:1100px;
+  margin:32px auto;
+  padding:28px;
+}
+
+/* header */
+.header {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+}
+.logo {
+  width:56px;
+  height:56px;
+  border-radius:12px;
+  background:linear-gradient(135deg, var(--accent), #a29bfe);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-weight:700;
+  font-size:18px;
+  box-shadow: 0 6px 18px rgba(108,92,231,0.18);
+}
+.title {
+  font-size:20px;
+  line-height:1.1;
+  margin:0;
+}
+.subtitle {
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* controls row */
+.controls {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin:18px 0 20px;
+}
+.search {
+  flex:1;
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.input {
+  flex:1;
+  background:var(--card);
+  border-radius:999px;
+  padding:10px 14px;
+  box-shadow: var(--shadow);
+  border:1px solid rgba(16,24,40,0.03);
+  font-size:14px;
+}
+.small-note {
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* grid of cards */
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap:18px;
+}
+
+/* single card */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding:16px;
+  box-shadow: var(--shadow);
+  border:1px solid rgba(16,24,40,0.03);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(16,24,40,0.09);
+}
+
+/* header inside card */
+.card-head {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.chap-num {
+  background: linear-gradient(135deg,#ffe1a8,#ffd6a5);
+  color:#6b4226;
+  min-width:44px;
+  height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+  font-weight:700;
+  font-size:16px;
+  box-shadow: 0 6px 20px rgba(255,170,96,0.12);
+}
+.chap-name {
+  font-weight:600;
+  font-size:15px;
+  margin:0;
+}
+.chap-sub {
+  margin:0;
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* buttons row */
+.card-actions {
+  display:flex;
+  gap:10px;
+  margin-top:auto;
+}
+.btn {
+  flex:1;
+  padding:10px 12px;
+  border-radius:10px;
+  text-align:center;
+  font-weight:600;
+  cursor:pointer;
+  border:0;
+  font-size:14px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn:active{ transform: translateY(1px); }
+
+.btn-sol {
+  background: linear-gradient(90deg,#6c5ce7,#a29bfe);
+  color:white;
+  box-shadow: 0 8px 18px rgba(108,92,231,0.18);
+}
+.btn-notes {
+  background: linear-gradient(90deg,#00b894,#55efc4);
+  color:white;
+  box-shadow: 0 8px 18px rgba(0,184,148,0.12);
+}
+
+/* footer / helper */
+.footer {
+  margin-top:24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* small responsive tweak */
+@media (max-width:520px){
+  .header{gap:10px}
+  .logo{width:48px;height:48px}
+  .time-cta{display:none}
+}
+

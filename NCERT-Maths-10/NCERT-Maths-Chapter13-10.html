@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapter 14 – Statistics (NCERT Solutions)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="page-header">
+  <h1>NCERT Solutions – Chapter 14<br>Statistics</h1>
+  <p class="subtitle">Exercise 14.1 • 14.2 • 14.3 • 14.4</p>
+</header>
+
+<main>
+
+<!-- Exercise 14.1 -->
+<section class="card">
+  <h2>Exercise 14.1 – Mean of Grouped Data</h2>
+
+  <article class="example">
+    <h3>Q1. Find the mean of data: 2, 3, 4, 5, 6</h3>
+    <pre class="worked">
+Mean = (Sum of observations) / (Number of observations)
+= (2 + 3 + 4 + 5 + 6) / 5
+= 20 / 5 = 4
+    </pre>
+  </article>
+
+  <article class="example">
+    <h3>Q2. Find mean for grouped data</h3>
+    <pre class="worked">
+Class   Frequency (f)   Midpoint (x)
+0-10       5             5
+10-20      7             15
+20-30      8             25
+30-40      10            35
+
+Mean = Σ(f × x) / Σf
+= (5×5 + 7×15 + 8×25 + 10×35) / (5+7+8+10)
+= (25 + 105 + 200 + 350) / 30 = 680 / 30 ≈ 22.67
+    </pre>
+  </article>
+</section>
+
+<!-- Exercise 14.2 -->
+<section class="card">
+  <h2>Exercise 14.2 – Median of Grouped Data</h2>
+
+  <article class="example">
+    <h3>Q1. Find median of given frequency table</h3>
+    <pre class="worked">
+Class       Frequency (f)   Cumulative Frequency (CF)
+0-10           5               5
+10-20          7               12
+20-30          8               20
+30-40          10              30
+
+Median class = class where CF ≥ N/2 = 30/2 = 15 → 20-30
+Median = l + [(N/2 – CF_prev)/f] × h
+= 20 + [(15 – 12)/8] × 10
+= 20 + (3/8) × 10 = 20 + 3.75 = 23.75
+    </pre>
+  </article>
+</section>
+
+<!-- Exercise 14.3 -->
+<section class="card">
+  <h2>Exercise 14.3 – Mode of Grouped Data</h2>
+
+  <article class="example">
+    <h3>Q1. Find mode from frequency table</h3>
+    <pre class="worked">
+Class   f
+0-10     5
+10-20    7
+20-30    12
+30-40    10
+
+Modal class = 20-30 (largest frequency)
+Mode = l + [(f1 – f0)/(2f1 – f0 – f2)] × h
+f1 = 12, f0 = 7, f2 = 10, l = 20, h = 10
+Mode = 20 + [(12–7)/(24–7–10)]×10
+= 20 + (5/7)×10 ≈ 27.14
+    </pre>
+  </article>
+</section>
+
+<!-- Exercise 14.4 -->
+<section class="card">
+  <h2>Exercise 14.4 – Graphical Representation</h2>
+
+  <article class="example">
+    <h3>Q1. Represent data by histogram</h3>
+    <pre class="worked">
+Steps:
+1. Draw axes: x → classes, y → frequency
+2. Draw rectangles of width equal to class intervals
+3. Height = frequency
+4. Adjacent rectangles touch each other
+    </pre>
+  </article>
+
+  <article class="example">
+    <h3>Q2. Represent data by cumulative frequency curve (ogive)</h3>
+    <pre class="worked">
+Steps:
+1. Draw axes: x → upper class boundary, y → cumulative frequency
+2. Plot points for cumulative frequency at upper boundary
+3. Join points smoothly
+4. Curve represents ogive
+    </pre>
+  </article>
+</section>
+
+<!-- Summary -->
+<section class="card">
+  <h2>Summary – Statistics</h2>
+  <ul>
+    <li>Mean = Σ(f × x) / Σf</li>
+    <li>Median = l + [(N/2 – CF_prev)/f] × h</li>
+    <li>Mode = l + [(f1 – f0)/(2f1 – f0 – f2)] × h</li>
+    <li>Histogram: frequency vs class intervals</li>
+    <li>Ogive: cumulative frequency curve</li>
+  </ul>
+</section>
+
+<footer class="card footer">
+  <p>NCERT Chapter 14 Solutions • Works with same CSS.</p>
+</footer>
+
+</main>
+</body>
+</html>

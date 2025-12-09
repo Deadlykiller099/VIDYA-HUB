@@ -1,0 +1,141 @@
+/* styles.css - load this separately */
+/* Basic reset and sensible defaults */
+* { box-sizing: border-box; }
+html,body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  background: #f4f7f9; /* soft background */
+  color: #0b1220;
+  line-height: 1.45;
+  padding-bottom: 40px;
+}
+
+/* Header: keep top buttons unchanged markup but add layout wrapper */
+.site-header { background: transparent; padding: 10px 16px 0 16px; }
+.top-row { display:flex; align-items:center; gap:12px; }
+
+/* NOTE: I intentionally don't change the structure of the 4 top buttons.
+   Minimal presentational style below so they fit the layout but behave like before. */
+.top-buttons button {
+  background: #f0f0f0;
+  border: 2px solid #d6d6d6;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: none;
+}
+.top-buttons button:focus { outline: 3px solid rgba(0,123,255,0.15); outline-offset: 2px; }
+
+/* Page container */
+.container {
+  max-width: 980px;
+  margin: 8px auto;
+  padding: 18px;
+}
+
+/* Hero */
+.hero { margin-top: 8px; margin-bottom: 18px; }
+h1 {
+  font-size: clamp(28px, 6vw, 54px);
+  margin: 8px 0 6px 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0f1724;
+}
+.lead {
+  font-size: 18px;
+  margin: 0 0 18px 0;
+  color: #2b3440;
+  font-weight: 400;
+}
+
+/* Cards grid: responsive */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+/* Card styles */
+.card {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(15,20,30,0.06);
+  padding: 22px;
+  box-shadow:
+    0 6px 18px rgba(7,11,20,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+  transition: transform .18s ease, box-shadow .18s ease;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Make some cards taller to create visual interest */
+.card.large { min-height: 280px; }
+
+/* Focusable card for keyboard users */
+.card:focus { outline: none; transform: translateY(-6px); box-shadow: 0 18px 30px rgba(7,11,20,0.12); }
+
+/* Hover/active */
+.card:hover { transform: translateY(-6px); box-shadow: 0 18px 30px rgba(7,11,20,0.12); }
+
+/* Card title and link */
+.card-title {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-link {
+  color: #071534;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.card-link:focus { outline: 3px solid rgba(0,123,255,0.12); outline-offset: 2px; }
+
+/* Card body */
+.card-body {
+  font-size: 16px;
+  color: #22303f;
+  margin: 0 0 18px 0;
+  flex-grow: 1;
+}
+
+/* CTA style - small neutral button that is consistent */
+.cta {
+  display: inline-block;
+  align-self: flex-start;
+  text-decoration: none;
+  background: #ffffff;
+  border: 2px solid #d0d0d0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(9,12,20,0.06);
+  transition: transform .12s ease, background-color .12s ease;
+  color: #0b1220;
+}
+.cta:hover { transform: translateY(-2px); background:#f7f9fb; }
+
+/* Footer */
+.site-footer {
+  max-width: 980px;
+  margin: 28px auto 0 auto;
+  padding: 8px 18px;
+  color: #5b6a78;
+  text-align: left;
+}
+
+/* Accessibility improvements for small screens */
+@media (max-width: 480px) {
+  .top-buttons button { padding: 6px 8px; font-size: 13px; }
+  .container { padding: 12px; }
+  h1 { margin-top: 6px; }
+  .card { padding: 16px; }
+}

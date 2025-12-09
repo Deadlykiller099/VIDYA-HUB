@@ -1,0 +1,89 @@
+/* Cards Grid Layout */
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Subject Card */
+.subject-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+  border: 1px solid #e6e6e6;
+}
+
+/* Hover Animation */
+.subject-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 25px rgba(0,0,0,0.18);
+}
+
+/* Subject Images */
+.subject-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.subject-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #2a2a2a;
+}
+
+/* Subtitle */
+.subject-card p {
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+/* Button */
+.start-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(135deg, #7f7bff, #a38cff);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.start-btn:hover {
+  background: linear-gradient(135deg, #6965ff, #9279ff);
+  box-shadow: 0 4px 12px rgba(146, 121, 255, 0.4);
+}
+
+/* Soft Background Colors for Each Card */
+.maths {
+  background: linear-gradient(135deg, #e8f0ff, #f6faff);
+}
+
+.science {
+  background: linear-gradient(135deg, #e8fff3, #f7fffb);
+}
+
+.sst {
+  background: linear-gradient(135deg, #fff5e6, #fffaf2);
+}
+
+.hindi {
+  background: linear-gradient(135deg, #ffebf1, #fff7fb);
+}
+
+.english {
+  background: linear-gradient(135deg, #edf7ff, #f8fbff);
+}

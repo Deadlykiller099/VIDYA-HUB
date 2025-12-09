@@ -1,0 +1,89 @@
+/* styles.css — separate stylesheet for Real Numbers solutions page */
+:root{
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --accent: #2563eb;
+  --muted: #6b7280;
+  --accent-2: #0ea5a4;
+  --shadow: 0 8px 20px rgba(0,0,0,0.06);
+  --radius: 12px;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background: linear-gradient(180deg,#f3f7fb 0%,var(--bg) 100%);
+  color:#0f172a;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:2rem;
+}
+
+.page-header{
+  max-width:900px;
+  margin:0 auto 1.5rem;
+  text-align:center;
+}
+.page-header h1{
+  margin:0;
+  font-size:1.7rem;
+  color:var(--accent);
+}
+.subtitle{
+  margin-top:.25rem;
+  color:var(--muted);
+}
+
+/* layout */
+main{
+  max-width:900px;
+  margin:0 auto;
+}
+
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:1.25rem;
+  margin-bottom:1rem;
+  box-shadow:var(--shadow);
+  border:1px solid rgba(15,23,42,0.04);
+}
+
+.card h2{
+  margin-top:0;
+  color:#0b1220;
+  font-size:1.1rem;
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+}
+
+.formula{
+  font-family: "Courier New", monospace;
+  background:linear-gradient(90deg, rgba(37,99,235,0.06), rgba(14,165,164,0.03));
+  padding:.5rem;
+  border-radius:8px;
+  display:inline-block;
+  margin:0.5rem 0;
+}
+
+.worked{
+  background:#0f172a0a;
+  padding:.75rem;
+  border-radius:8px;
+  font-family: "Courier New", monospace;
+  white-space:pre-wrap;
+}
+
+.example{margin-bottom:.75rem}
+.example h3{margin-bottom:.25rem; font-size:.98rem}
+footer.footer{ text-align:center; font-size:.9rem; color:var(--muted) }
+
+/* small responsive */
+@media (max-width:600px){
+  body{padding:1rem}
+  .page-header h1{font-size:1.25rem}
+}
+

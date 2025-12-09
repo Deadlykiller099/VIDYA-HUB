@@ -1,0 +1,20 @@
+/* Timer */
+.flip-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.time-box {
+    background: #222f3e;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    min-width: 50px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

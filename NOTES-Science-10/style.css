@@ -1,0 +1,66 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Page heading */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Note card styling */
+.note-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 900px;
+    transition: transform 0.2s;
+}
+
+.note-card:hover {
+    transform: scale(1.02);
+}
+
+/* Note title */
+.note-title {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Note content */
+.note-content {
+    color: #2c3e50;
+    line-height: 1.7;
+}
+
+.note-content ul {
+    padding-left: 20px;
+}
+
+.note-content li {
+    margin-bottom: 8px;
+}
+
+.note-subtitle {
+    font-weight: bold;
+    color: #16a085;
+    margin-top: 10px;
+}
+
+.example {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-left: 5px solid #3498db;
+    margin: 10px 0;
+    border-radius: 5px;
+}

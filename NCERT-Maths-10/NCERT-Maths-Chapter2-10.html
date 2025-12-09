@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chapter 2 — Polynomials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <h1>Polynomials — Chapter 2 (Complete Notes & Solutions)</h1>
+    <p class="subtitle">Theory • Examples • Solved Questions</p>
+  </header>
+
+  <main>
+
+    <!-- 1. Basics -->
+    <section class="card">
+      <h2>1. Introduction & Basic Definitions</h2>
+      <p>A <strong>polynomial in x</strong> is an expression of the form:<br>
+        <em>a<sub>n</sub>xⁿ + a<sub>n−1</sub>xⁿ⁻¹ + ... + a₁x + a₀</em>
+      </p>
+      <ul>
+        <li><strong>Degree:</strong> highest power of x.</li>
+        <li><strong>Constant polynomial:</strong> degree 0.</li>
+        <li><strong>Zero polynomial:</strong> all coefficients 0.</li>
+        <li><strong>Zero of a polynomial:</strong> a value α such that P(α)=0.</li>
+      </ul>
+    </section>
+
+    <!-- 2. Remainder Theorem -->
+    <section class="card">
+      <h2>2. Remainder Theorem</h2>
+      <p>If P(x) is divided by (x – a), the remainder is simply <strong>P(a)</strong>.</p>
+
+      <h3>Example</h3>
+      <pre class="worked">
+P(x) = x³ – 2x² + 3x – 5
+Remainder when dividing by (x – 2):
+P(2)=8 – 8 + 6 – 5 = 1 → remainder = 1
+      </pre>
+    </section>
+
+    <!-- 3. Factor Theorem -->
+    <section class="card">
+      <h2>3. Factor Theorem</h2>
+      <p>(x – a) is a factor of P(x) <strong>if</strong> P(a)=0.</p>
+
+      <h3>Example</h3>
+      <pre class="worked">
+P(x)=x³ + x² – x – 1
+Check x=1:
+P(1)=1+1–1–1 = 0
+→ (x – 1) is a factor.
+      </pre>
+    </section>
+
+    <!-- 4. Division Algorithm -->
+    <section class="card">
+      <h2>4. Division Algorithm</h2>
+      <div class="formula">P(x) = D(x)Q(x) + R(x)</div>
+      <p>Where deg(R) &lt; deg(D).</p>
+
+      <h3>Example</h3>
+      <pre class="worked">
+Divide P(x)=x³ – 3x² + 5x – 3 by (x – 2):
+
+P(2)=3 → remainder
+Quotient = x² – x + 3
+      </pre>
+    </section>
+
+    <!-- 5. Zeros and Coefficients -->
+    <section class="card">
+      <h2>5. Zeros of a Quadratic Polynomial</h2>
+      <p>If P(x)=ax²+bx+c has zeros α and β:</p>
+      <ul>
+        <li>α + β = −b/a</li>
+        <li>αβ = c/a</li>
+      </ul>
+
+      <h3>Example</h3>
+      <pre class="worked">
+For 2x² – 5x + 3:
+α + β = 5/2
+αβ = 3/2
+      </pre>
+    </section>
+
+    <!-- 6. Factorisation -->
+    <section class="card">
+      <h2>6. Factorisation of Polynomials</h2>
+
+      <h3>Example</h3>
+      <pre class="worked">
+Factorise x³ – 6x² + 11x – 6
+
+Try x=1 → P(1)=0
+Divide by (x – 1) → x² – 5x + 6
+Factor again → (x – 2)(x – 3)
+
+Final answer:
+(x – 1)(x – 2)(x – 3)
+      </pre>
+    </section>
+
+    <!-- 7. Identities -->
+    <section class="card">
+      <h2>7. Important Algebraic Identities</h2>
+      <ul>
+        <li>(a ± b)² = a² ± 2ab + b²</li>
+        <li>(a ± b)³ = a³ ± 3a²b + 3ab² ± b³</li>
+        <li>a³ ± b³ = (a ± b)(a² ∓ ab + b²)</li>
+      </ul>
+    </section>
+
+    <!-- 8. Solved Problems -->
+    <section class="card">
+      <h2>8. Solved Examples</h2>
+
+      <article class="example">
+        <h3>Example 1</h3>
+        <p>Find k if (x – 3) is a factor of x³ – 3x² + kx + 6.</p>
+        <pre class="worked">
+P(3) = 27 – 27 + 3k + 6 = 3k + 6
+Set = 0 → k = –2.
+        </pre>
+      </article>
+
+      <article class="example">
+        <h3>Example 2</h3>
+        <p>Find a quadratic whose zeros are 2 and –3.</p>
+        <pre class="worked">
+(x – 2)(x + 3) = x² + x – 6
+        </pre>
+      </article>
+
+      <article class="example">
+        <h3>Example 3</h3>
+        <p>Compute α² + β² for polynomial x² – 4x + 3.</p>
+        <pre class="worked">
+α+β = 4
+αβ = 3
+α²+β² = (α+β)² – 2αβ
+       = 16 – 6 = 10
+        </pre>
+      </article>
+    </section>
+
+    <!-- 9. Summary -->
+    <section class="card">
+      <h2>9. Summary</h2>
+      <ul>
+        <li>Remainder = P(a)</li>
+        <li>(x – a) is a factor ↔ P(a)=0</li>
+        <li>Quadratic: sum & product of zeros = −b/a, c/a</li>
+        <li>Factorisation often starts by testing ±1, ±2, …</li>
+      </ul>
+    </section>
+
+    <footer class="card footer">
+      <p>Prepared for Polynomials — using the same CSS as Chapter 1.</p>
+    </footer>
+
+  </main>
+</body>
+</html>
